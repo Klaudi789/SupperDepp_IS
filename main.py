@@ -16,8 +16,8 @@ def main() -> None:
 
     ausgabe:str = "Auswertung Superdepp\n" + 20 * "*"
     ausgabe += f"\nerhaltene SMS: {smsListe}\nmit {anzahlSmsListe} Eintragen"
-    ausgabe += f"\ngültige SMS: {sms0K}\nmit {anzahlSmsOK} Einträgen"
-    ausgabe += f"\ngültige SMS \[\%\]{prozentSmsOK}"
+    ausgabe += f"\ngültige SMS: {smsOK}\nmit {anzahlSmsOK} Einträgen"
+    ausgabe += f"\ngültige SMS {0:.1%}".format(prozentSmsOK)
 
 
     print(ausgabe)
